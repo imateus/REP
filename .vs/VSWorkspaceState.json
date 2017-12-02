@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     ""
   ],
   "SelectedNode": "\\index.php",
 =======
+=======
+>>>>>>> 5349ea96155ae79608ec5e25891948f5da70055c
     "",
     "\\dao",
     "\\imagens",
@@ -12,6 +15,9 @@
     "\\suporte"
   ],
   "SelectedNode": "\\usuarios.php",
+<<<<<<< HEAD
+>>>>>>> 5349ea96155ae79608ec5e25891948f5da70055c
+=======
 >>>>>>> 5349ea96155ae79608ec5e25891948f5da70055c
   "PreviewInSolutionExplorer": false
 }
