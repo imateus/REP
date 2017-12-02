@@ -1,11 +1,49 @@
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9a9797;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #1498d5;
+}
+
+.active {
+    background-color: #1498d5;
+}
+</style>
 <nav class="navbar navbar-default navbar-fixed-top">
+        <ul>
+            <li><img src="imagens/Logo.png" style="margin-top: 13px;margin-left: 10px;"></li>
+            <li><a href="#news">
+                <button type="button" 
+                        class="btn btn-info btn-lg" data-toggle="modal" 
+                        data-target="#telaModal" id='incluir'  
+                        onclick="<?php echo "editar('Incluir','Ativo')"; ?>">Novo
+                </button>
+                </a>
+            </li>
+            <li><a href="#contact">Contact</a></li>            
+            <li style="float:right"><a class="active" href="#about"><img style="border-radius: 50%;" id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"><?php echo " ".$usuario;?></a></li>
+        </ul>
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
+
             <a class="navbar-brand">
                 <img src="imagens/Logo.png">
             </a>
