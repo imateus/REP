@@ -2,8 +2,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0;    
     background-color: #9a9797;
     height: auto;
 }
@@ -88,7 +87,7 @@ li a {
        
             <div class="dropdown">
   <button class="dropbtn"><img style="border-radius: 50%;" id="profile-img" 
-            class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"><?php echo " ".$usuario;?></button>
+            class="profile-img-card" src="imagens/user.png"><?php echo " ".$usuario;?></button>
   <div class="dropdown-content">
     <a href="logout.php">Sair</a>
     
@@ -98,6 +97,5 @@ li a {
             
         
 
-</div>
     
 </nav>

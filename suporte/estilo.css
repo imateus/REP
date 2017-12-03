@@ -127,11 +127,11 @@ h4 {
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #269abc !important;
-    background-color: #fff !important;
+    background-color: #9a9797 !important;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #9a9797 !important;
 }
 footer .glyphicon {
     font-size: 20px;
