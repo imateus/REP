@@ -30,7 +30,7 @@ li a {
 <nav class="navbar navbar-default navbar-fixed-top">
         <ul>
             <li><img src="imagens/Logo.png" style="margin-top: 13px;margin-left: 10px;"></li>
-            <li><a href="#news">
+            <li><a>
                 <button type="button" 
                         class="btn btn-info btn-lg" data-toggle="modal" 
                         data-target="#telaModal" id='incluir'  

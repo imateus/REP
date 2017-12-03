@@ -51,3 +51,12 @@ function alterar($id, $senha, $nome, $email, $cpf, $status, $cargo, $departament
     return $result;
 }
 
+function inativar($id) {
+    $sn = md5($senha);
+    $sql = "update usuario set "
+            . "status='I' where id = $id";
+    $conn = conectar();
+    $result = mysqli_query($conn, $sql);
+    desconectar($conn);
+    "alert('Excluido!');" ;
+}
