@@ -24,9 +24,6 @@ switch ($acao) {
     case "Alterar":
         $res = alterar($id, $senha, $nome, $email, $cpf, $status, $departamento, $cargo);
         break;
-    case "Inativar":
-        $res = inativar($id);
-        break;
 }
 
 header('Location: index.php');

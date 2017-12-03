@@ -47,7 +47,7 @@ if (isset($usuario)) {
             $cargo = $registro['cargo'];
             $status = 'A';
             ?>
-            <form class="form-signin" action="inativar.php" method="POST" >
+            
             <div class="col-sm-4 col-xs-12">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -61,7 +61,7 @@ if (isset($usuario)) {
                             ?>
                         </h1>
                     </div>
-                    <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
+                    
                     <div class="panel-body">
                         <p><strong>Login:</strong> <?php echo $login ?> </p>
                         <p><strong>Nome:</strong> <?php echo $nome ?> </p>
@@ -85,12 +85,15 @@ if (isset($usuario)) {
                                     data-target="#telaModal" id='editar'  
                                     onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
                             </button>
-                            <button class="btn btn-lg">Excluir</button>
+                            <form class="form-signin" action="inativar.php" method="POST">
+                                <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
+                                <button class="btn btn-lg">Excluir</button>
+                            </form> 
                         <?php } ?>
                     </div>
                 </div>      
             </div>
-        </form>         
+                
         <?php } ?>
     </div>
 </div>
