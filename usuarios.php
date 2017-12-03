@@ -52,13 +52,7 @@ if (isset($usuario)) {
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1>
-                            <?php
-                            $foto = "imagens/" . $login . ".jpg";
-                            if (file_exists($foto) == FALSE) {
-                                $foto = "imagens/avatar.jpg";
-                            }
-                            echo "<img src='" . $foto . "' height='100' >";
-                            ?>
+                            <img src="imagens/user.png" height="100" style="border-radius:50%;">
                         </h1>
                     </div>
                     <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
