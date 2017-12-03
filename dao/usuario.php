@@ -30,20 +30,20 @@ function alterarSituacao($id, $st) {
     return $result;
 }
 
-function incluir($login, $senha, $nome, $email, $cep, $status, $celular, $fixo) {
+function incluir($login, $senha, $nome, $email, $cpf, $status, $cargo, $departamento) {
     $sn = md5($senha);
-    $sql = "insert into usuario (login, senha, nome, email, cep, status, celular, fixo )"
-            . " values ('$login', '$sn', '$nome', '$email', '$cep', '$status', '$celular', '$fixo')";
+    $sql = "insert into usuario (login, senha, nome, email, cpf, status, cargo, departamento )"
+            . " values ('$login', '$sn', '$nome', '$email', '$cpf', '$status', '$cargo', '$departamento')";
     $conn = conectar();
     $result = mysqli_query($conn, $sql);
     desconectar($conn);
     return $result;
 }
 
-function alterar($id, $senha, $nome, $email, $cep, $status, $celular, $fixo) {
+function alterar($id, $senha, $nome, $email, $cpf, $status, $cargo, $departamento) {
     $sn = md5($senha);
     $sql = "update usuario set "
-            . "senha='$sn', nome='$nome', email='$email', cep='$cep', status='$status' , celular='$celular', fixo='$fixo'"
+            . "senha='$sn', nome='$nome', email='$email', cpf='$cpf', status='$status' , cargo='$cargo', departamento='$departamento'"
             . " where id = $id";
     $conn = conectar();
     $result = mysqli_query($conn, $sql);

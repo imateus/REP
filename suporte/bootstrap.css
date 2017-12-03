@@ -192,9 +192,7 @@ th {
     text-shadow: none !important;
   }
   a,
-  a:visited {
-    text-decoration: underline;
-  }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
@@ -1092,7 +1090,6 @@ a {
 a:hover,
 a:focus {
   color: #23527c;
-  text-decoration: underline;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -3420,7 +3417,6 @@ fieldset[disabled] .btn-link:focus {
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10 16px;
-  font-size: 18px;
   border-radius: 6px;
 }
 .btn-sm,
