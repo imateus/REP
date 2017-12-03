@@ -47,6 +47,7 @@ if (isset($usuario)) {
             $cargo = $registro['cargo'];
             $status = 'A';
             ?>
+            <form class="form-signin" action="inativar.php" method="POST" >
             <div class="col-sm-4 col-xs-12">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
@@ -60,6 +61,7 @@ if (isset($usuario)) {
                             ?>
                         </h1>
                     </div>
+                    <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
                     <div class="panel-body">
                         <p><strong>Login:</strong> <?php echo $login ?> </p>
                         <p><strong>Nome:</strong> <?php echo $nome ?> </p>
@@ -83,11 +85,12 @@ if (isset($usuario)) {
                                     data-target="#telaModal" id='editar'  
                                     onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
                             </button>
-                            
+                            <button class="btn btn-lg">Excluir</button>
                         <?php } ?>
                     </div>
                 </div>      
-            </div>     
+            </div>
+        </form>         
         <?php } ?>
     </div>
 </div>
@@ -150,7 +153,7 @@ if (isset($usuario)) {
                 </div>
                 <div class="modal-footer">
                     <input type="submit" class="btn btn-default" value="Salvar">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>                    
                 </div>
             </div>
 
