@@ -68,9 +68,7 @@ if (isset($usuario)) {
                         <p><strong>Departamento:</strong> <?php echo $departamento ?> </p>
                         <p><strong>Cargo:</strong> <?php echo $cargo?></p>
                         <?php if ($us == "admin") { ?>
-                            <form action="alterarSituacao.php" method="POST">
-                               
-                            </form>
+                            
                         <?php } ?>
 
                     </div>
