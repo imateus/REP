@@ -27,17 +27,7 @@ if (isset($usuario)) {
 }
 ?>
 <div id="usuarios" class="container-fluid">
-    <div class="text-center">
-        <h2>Novo Colaborador
-            <?php if ($us == "admin") { ?> 
-                <button type="button" 
-                        class="btn btn-info btn-lg" data-toggle="modal" 
-                        data-target="#telaModal" id='incluir'  
-                        onclick="<?php echo "editar('Incluir','Ativo')"; ?>">Novo
-                </button>
-            <?php } ?>
-        </h2>
-    </div>
+    
     <div class="row slideanim">
 
         <?php

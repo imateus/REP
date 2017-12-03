@@ -5,6 +5,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #9a9797;
+    height: 55px;
 }
 
 li {
@@ -15,9 +16,11 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 20px;
     text-decoration: none;
-}
+    padding: 10px;
+    
+ }
 
 li a:hover:not(.active) {
     background-color: #1498d5;
@@ -25,7 +28,9 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #1498d5;
+    height: 55px;   
 }
+
 </style>
 <nav class="navbar navbar-default navbar-fixed-top">
         <ul>
@@ -34,7 +39,7 @@ li a:hover:not(.active) {
                 <button type="button" 
                         class="btn btn-info btn-lg" data-toggle="modal" 
                         data-target="#telaModal" id='incluir'  
-                        onclick="<?php echo "editar('Incluir','Ativo')"; ?>">Novo
+                        onclick="<?php echo "editar('Incluir','Ativo')"; ?>">Novo Cadastro   
                 </button>
                 </a>
             </li>
@@ -53,9 +58,6 @@ li a:hover:not(.active) {
                     if ($usuario == "admin") {  
                         ?>
                         <span><?php echo $usuario;?>
-                            <a href="#usuarios">
-                                <img src="imagens/edit.png" alt="Usuários" >
-                            </a>
                             <a href='logout.php'>
                                 <img src="imagens/sair.png" alt="Sair" > 
                             </a>
