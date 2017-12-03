@@ -18,13 +18,8 @@ li a {
     text-align: center;
     padding: 0 20px;
     text-decoration: none;
-    padding: 10px;
-    
+    padding: 10px;    
  }
-
-li a:hover:not(.active) {
-    background-color: #1498d5;
-}
 
 .active {
     background-color: #1498d5;
@@ -43,36 +38,6 @@ li a:hover:not(.active) {
                 </button>
                 </a>
             </li>
-                      
             <li style="float:right"><a class="active" href="#about"><img style="border-radius: 50%;" id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"><?php echo " ".$usuario;?></a></li>
         </ul>
-    <div class="container">
-        <div class="navbar-header">
-
-            <a class="navbar-brand">
-                <img src="imagens/Logo.png">
-            </a>
-            <div class="btn btn-default btn-lg">
-                <?php
-                if (isset($usuario)) {
-                    if ($usuario == "admin") {  
-                        ?>
-                        <span><?php echo $usuario;?>
-                            <a href='logout.php'>
-                                <img src="imagens/sair.png" alt="Sair" > 
-                            </a>
-                        </span>
-                        <?php
-                    } else {
-                        echo "<span>::: $usuario ::: "
-                        . "<a href='logout.php'>Sair</a></span>";
-                    }
-                } else {
-                    echo "<span><a href='login.html'>Autenticar</a></span>";
-                }
-                ?>
-            </div>
-        </div>
-     
-    </div>
 </nav>

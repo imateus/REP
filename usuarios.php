@@ -26,9 +26,10 @@ if (isset($usuario)) {
     }
 }
 ?>
-<div id="usuarios" class="container-fluid">
-    
-    <div class="row slideanim">
+<div id="usuarios">
+    <br>
+    <br>    
+    <div>
 
         <?php
         $result = usuarios($us);
