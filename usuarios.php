@@ -112,6 +112,7 @@ if (isset($usuario)) {
                                     data-target="#telaModal" id='editar'  
                                     onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
                             </button>
+                            <button class="btn btn-lg">Excluir</button>
                         <?php } ?>
                     </div>
                 </div>      
