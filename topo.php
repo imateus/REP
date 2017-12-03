@@ -43,7 +43,7 @@ li a:hover:not(.active) {
                 </button>
                 </a>
             </li>
-            <li><a href="#contact">Contact</a></li>            
+                      
             <li style="float:right"><a class="active" href="#about"><img style="border-radius: 50%;" id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"><?php echo " ".$usuario;?></a></li>
         </ul>
     <div class="container">
