@@ -83,6 +83,9 @@ if (isset($usuario)) {
                                             onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
                                         </button>
                                     </th>
+                                    <th>
+                                    <img src="imagens/gambi.png" style="border-radius:50%;">
+                                    </th>
                                     <th>             
                                         <form class="form-signin" action="inativar.php" method="POST">
                                             <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
