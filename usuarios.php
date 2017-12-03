@@ -82,10 +82,6 @@ if (isset($usuario)) {
                                             $can = "SELECTED";
                                             break;
                                     }
-                                    $desab = "";
-                                    if ($login == "admin") {
-                                        $desab = "DISABLED";
-                                    }
                                     ?>
                                     <select name="status" <?php echo $desab ?>>
                                         <option value="Ativo" <?php echo $ati ?> >Ativo</option>
