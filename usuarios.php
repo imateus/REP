@@ -26,9 +26,12 @@ if (isset($usuario)) {
     }
 }
 ?>
+<br>
+<br>
+<br>
+<br>
 <div id="usuarios">
-    <br>
-    <br>    
+
     <div>
 
         <?php
@@ -42,7 +45,7 @@ if (isset($usuario)) {
             $cpf = $registro['cpf'];
             $departamento = $registro['departamento'];
             $cargo = $registro['cargo'];
-            $status = $registro['status'];
+            $status = 'A';
             ?>
             <div class="col-sm-4 col-xs-12">
                 <div class="panel panel-default text-center">
@@ -66,37 +69,7 @@ if (isset($usuario)) {
                         <p><strong>Cargo:</strong> <?php echo $cargo?></p>
                         <?php if ($us == "admin") { ?>
                             <form action="alterarSituacao.php" method="POST">
-                                <p><strong>Status:</strong> 
-                                    <?php
-                                    $ati = "";
-                                    $ina = "";
-                                    $can = "";
-                                    switch ($status) {
-                                        case "Ativo":
-                                            $ati = "SELECTED";
-                                            break;
-                                        case "Inativo":
-                                            $ina = "SELECTED";
-                                            break;
-                                        case "Cancelado":
-                                            $can = "SELECTED";
-                                            break;
-                                    }
-                                    $desab = "";
-                                    if ($login == "admin") {
-                                        $desab = "DISABLED";
-                                    }
-                                    ?>
-                                    <select name="status" <?php echo $desab ?>>
-                                        <option value="Ativo" <?php echo $ati ?> >Ativo</option>
-                                        <option value="Inativo"<?php echo $ina ?>>Inativo</option>
-                                        <option value="Cancelado"<?php echo $can ?>>Cancelado</option>
-                                    </select>  
-                                    <input type="hidden" value="<?php echo $id ?>" name="id">
-                                    <?php if ($login != "admin") { ?>
-                                        <input type="submit" value="^" title="Clique aqui para alterar o status." >
-                                    <?php } ?>
-                                </p>
+                               
                             </form>
                         <?php } ?>
 
@@ -112,7 +85,7 @@ if (isset($usuario)) {
                                     data-target="#telaModal" id='editar'  
                                     onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
                             </button>
-                            <button class="btn btn-lg">Excluir</button>
+                            
                         <?php } ?>
                     </div>
                 </div>      

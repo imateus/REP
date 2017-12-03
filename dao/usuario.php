@@ -51,14 +51,3 @@ function alterar($id, $senha, $nome, $email, $cpf, $status, $cargo, $departament
     return $result;
 }
 
-function delete($login) {
-    $sql = "DELETE from usuario ". "where login='" . $login . "'";
-
-    $conn = conectar();
-
-    $result = mysqli_query($conn, $sql);
-
-    desconectar($conn);
-    
-    "alert('Excluido!');" ;
-}
