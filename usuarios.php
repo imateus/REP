@@ -74,15 +74,23 @@ if (isset($usuario)) {
                         <button class="btn btn-lg">Excluir</button>
                         -->
                         <?php if ($us == "admin") { ?> 
-                            <button type="button" 
-                                    class="btn btn-info btn-lg" data-toggle="modal" 
-                                    data-target="#telaModal" id='editar'  
-                                    onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
-                            </button>
-                            <form class="form-signin" action="inativar.php" method="POST">
-                                <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
-                                <button class="btn btn-lg">Excluir</button>
-                            </form> 
+                            <table style="margin-right: auto;margin-left:auto;">
+                                <tr>
+                                    <th>
+                                        <button type="button" 
+                                            class="btn btn-info btn-lg" data-toggle="modal" 
+                                            data-target="#telaModal" id='editar'  
+                                            onclick="<?php echo "editar('Alterar','$status',$id,'$login','$nome','$email', '$cpf', '$cargo','$departamento')"; ?>">Editar
+                                        </button>
+                                    </th>
+                                    <th>             
+                                        <form class="form-signin" action="inativar.php" method="POST">
+                                            <input name="login" type="hidden" value="<?php echo $registro['login'] ?>"/>
+                                            <button class="btn btn-lg">Excluir</button>
+                                        </form> 
+                                    </th>	
+                                </tr>
+                            </table>
                         <?php } ?>
                     </div>
                 </div>      
