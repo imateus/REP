@@ -9,7 +9,7 @@ $usuario = isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : null;
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>REP</title>
+        <title>REP - Cadastro de Usuários</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -24,9 +24,7 @@ $usuario = isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : null;
           data-target=".navbar" data-offset="60">
               <?php
               include_once './topo.php';
-              if (isset($usuario)) {
-                  include_once './usuarios.php';
-              }
+              include_once './usuarios.php';
               ?>
         <script src="suporte/suportenavegacao.js" ></script>
     </body>
